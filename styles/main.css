@@ -1,0 +1,325 @@
+﻿* {
+	padding: 0;
+	margin: 0;
+	outline: none;
+}
+
+body {
+	font-size: 62.5%;
+	font-family: arial;
+	background: #000;
+	color: #373c3a;
+}
+
+img { border: 0; }
+
+.sprite {
+	display: block;
+	height: 0;
+	overflow: hidden;
+}
+
+#takeover-layer {
+	position: fixed; 
+	width: 100%;
+	height: 100%;
+	z-index: 100;
+	background-color: #000;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	z-index: 200;
+}
+
+#takeover {
+	position: fixed;
+	top: 60px;
+	left: 50%;
+	margin-left: -400px;
+	width: 800px;
+	height: 448px;
+	z-index: 200;
+}
+
+#contentcontainer, #content {
+	text-align: left;
+}
+#contentcontainer {
+	background: url(../images/keyart.jpg) no-repeat center 30px;	
+	width: 100%;
+}
+
+	#content {	
+		background: url(../images/keyart.jpg) no-repeat center 30px;	
+		display: block;
+		width: 100%;
+	}
+
+#facebook-recommend {
+	width: 550px;
+	margin: 0 auto 0 -275px;
+	padding: 4px 0 0;
+	position: absolute;
+	left: 50%;
+	background: transparent;
+}
+
+#inner-content-container {
+	margin: 0 auto;
+	overflow: hidden;
+	padding-top: 95px;
+	width: 1000px;
+}
+
+#inner-content {
+	width: 700px;
+	float: left;
+	margin: 0 auto;	
+}
+	
+	h1 {		
+		background: url(../images/title.jpg) no-repeat left top;
+		margin: 0 auto;
+		height: 0;
+		padding-top: 123px;
+		overflow: hidden;
+		display: block;
+		width: 640px;
+	}
+	
+	#release-date {
+		color: #fff;
+		font-size: 18px;
+		margin-top: 70px;
+		text-align: center;
+		text-transform: uppercase;
+	}
+	
+	#menu {
+		float: right;
+		width: 259px;
+		margin: 0 10px 0 0;
+		list-style-type: none;
+	}
+	
+		#menu ul { list-style-type: none; }
+	
+		#menu li#enterthesite {
+			width: 258px;
+			padding: 6px 0 12px;
+			border: 1px solid #838b8d;
+			background: #415053 url(../images/bg-enterthesite.jpg) repeat-x;
+			cursor: pointer;
+			-webkit-border-radius: 4px;
+			-moz-border-radius: 4px;
+			border-radius: 4px;
+		}
+		
+			#menu li#enterthesite p { text-align: center; }
+		
+			#menu li#enterthesite p.enter { font-size: 2.8em; }
+			#menu li#enterthesite p.bla { font-size: 1.7em; }
+		
+			#menu li#enterthesite a {
+				text-decoration: none;
+				color: #fff;
+				font-weight: bold;
+				text-align: center;
+			}
+			
+				#menu li#enterthesite a span {
+					font-size: 0.6em;
+				}
+				
+			#menu li#enterthesite #enterthesite-video {
+				width: 232px;
+				height: 94px;
+				margin: 8px auto 0;
+				display: block;
+			}
+	
+		#menu li a.button {
+			width: 257px;
+			height: 30px;
+			padding: 13px 0 0;
+			display: block;
+			text-align: center;
+			font-family: 'unitedsansreg', arial;
+			color: #fff;
+			text-decoration: none;
+			font-weight: bold;
+			font-size: 1.4em;
+			background: url(../images/bg-button.png) no-repeat 0 -1px;
+		}
+		
+			#menu li a.button:hover { background-position: 0 -45px; }
+		
+		#menu li a#watch-trailer {
+			height: 31px;
+			background-position: 0 0;
+		}
+		
+			#menu li a#watch-trailer:hover { background-position: 0 -44px; }
+			
+		#menu li a.watchops {
+			clear: both;
+			width: 258px;
+			height: 0;
+			padding: 90px 0 0;
+			margin: 4px 0 0;
+			overflow: hidden;
+			display: block;
+			background: url(../images/button-watchops.png) no-repeat;
+		}
+		
+		#menu li a#watch-videogametrailer {
+			padding: 9px 0;
+			height: 52px;
+			font-size: 1.2em;
+			background: url(../images/bg-button-bigger.png) no-repeat 0 -1px;
+		}
+		
+			#menu li a#watch-videogametrailer:hover {
+				background-position: 0 -71px;
+			}
+		
+		#menu li a#watch {
+			padding: 15px 0 0;
+			height: 46px;
+			font-size: 1.2em;
+			background: url(../images/bg-button-big.png) no-repeat 0 0;
+		}
+		
+			#menu li a#watch:hover {
+				background-position: 0 -61px;
+			}
+			
+		/* facebook like box */
+			
+		#likebox-wrap {
+	border: 2px solid #000;
+	width: 255px;
+	z-index: 10;
+	height: 60px;
+	overflow: hidden;
+	position: relative;
+	top: -1px;
+	left: -2px;
+	background-image: url(../images/fb-bg-button.png);
+	background-repeat: no-repeat;
+	background-position: center bottom;
+		}
+		
+			#likebox-wrap iframe{
+			  left:-1px;
+			  overflow:hidden;
+			  position:relative;
+			  top:-1px;
+			  z-index: 9;
+			}
+
+		/* get tickets and showtimes */		
+		#menu li#gettickets, #menu .gettickets-hover {	
+			width: 257px;
+			margin: 0 auto;
+			z-index: 0;
+			cursor: pointer;	
+			background: url(../images/bg-button.png) no-repeat 0 -2px;
+		}
+			#menu #gettickets {
+				position: relative;
+				z-index: 0;
+			}
+			#menu .gettickets-hover { 
+				background-position: 0 -46px !important; 
+			}
+			#menu #gettickets p {
+				color: #FFFFFF;
+				font-family: unitedsansreg,arial;
+				font-size: 1.4em;
+				font-weight: bold;
+				height: 30px;
+				padding: 12px 0 0;
+				text-align: center;
+			}
+			#menu #gettickets #arrow {
+				position: absolute;
+				width: 32px;
+				height: 0;
+				padding: 34px 0 0;
+				overflow: hidden;
+				display: block;
+				background: url(../images/arrow.png) no-repeat 0 0;
+				display: none;
+				left: 8px;
+				top: 6px;
+				z-index: 100;
+			}
+			#menu .gettickets-expanded .gettickets-hover{
+				width: 257px !important;
+			}
+			
+				#menu .gettickets-expanded .aesthetics {
+					background: #465559 url(../images/bg-connectandshare.jpg) repeat-x !important;
+				}
+				
+			#menu #getticketswidget-container {
+				/* display: none; */
+				overflow: auto;
+			}
+				#menu #getticketswidget {
+					display: block;
+					margin: 0 auto;
+					position: relative;
+					height: 355px;
+					width: 257px;
+					z-index: 1;
+				}
+			
+				
+			#contentcontainer #content #menu li a#register.button {
+				clear: both;
+				display: block;
+			}
+				
+	#inner-footer {
+		clear: both;
+		float: left;
+		width: 920px;
+		padding: 0 40px;
+		margin: 255px auto 0;
+	}
+		#inner-footer p {
+			color: #4D4D4D;
+			float: right;
+			line-height: 1.2;
+			width: 490px;
+		}
+
+		#inner-footer a {
+			color: #4D4D4D;
+		}
+		
+		#inner-footer ul {
+			float: left;
+			list-style-type: none;
+			padding: 0;
+		}
+		
+			#inner-footer ul li {
+				float: left;
+				padding: 0 0 0 25px;
+			}
+				#inner-footer ul li img.check { margin-top: 22px; }
+				#inner-footer ul li.listfirst { padding: 0; }
+					
+				
+		p#copyright {
+			clear: right;
+			margin-top: 15px;
+		}
+
+/** FOOTER **/
+#footer, #footer a { color: #373c3a; }	
+#footer #footerlegal { border-top: 1px solid #373c3a; }
+#footer #footerinfo li, #footer #footerlegal ul li { border-left: 1px solid #373c3a; }

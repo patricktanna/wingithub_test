@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--Splash Template v1.02-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Skyfall - Official Sony Pictures Australia Movie Site</title>
+	<meta name="description" content="Daniel Craig returns as James Bond 007 in SKYFALL, the 23rd installment of the Bond series on screen. Only at the Movies! November 22, 2012" />
+	<meta name="keywords" content="James Bond Movie, Skyfall Movie, James Bond, Daniel Craig, 007, British Secret Service, Spy, Secret Agent" />
+	<meta name="decorator" content="widetreatments" />
+	
+	<meta property="og:title" content="Skyfall - Official Sony Pictures Australia Movie Site" />
+	<meta property="og:type" content="movie" />
+	<meta property="og:site_name" content="Skyfall" />
+	<meta property="og:url" content="http://www.JamesBondSkyfall.com.au" />
+	<meta property="og:image" content="http://flash.sonypictures.com/shared/intl/au/movies/skyfall/skyfall_share.jpg" name="thumb" /> 
+	<link rel="image_src" href="http://flash.sonypictures.com/shared/intl/au/movies/skyfall/skyfall_share.jpg"/>
+	
+	<link rel="stylesheet" type="text/css" href="styles/main.css" media="screen" />
+	
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+	<script type="text/javascript" src="/global/scripts/cufon.js"></script>
+	<script type="text/javascript" src="scripts/fonts.js"></script>
+	<script type="text/javascript" src="scripts/corefunctions.js"></script>	
+	<script type="text/javascript" src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script>
+</head>
+<body>
+<div id="inner-content-container">
+<div id="inner-content">
+	<h1>
+		Skyfall 007
+	</h1>
+	<p id="release-date">Only at the movies! November 22, 2012</p>
+</div>
+	<ul id="menu">
+		<li>
+			<div id="likebox-wrap">
+				<fb:like-box href="https://www.facebook.com/JamesBond007" width="259" height="62" colorscheme="dark" show_faces="false" stream="false" header="false"></fb:like-box>
+			</div>
+		</li>	
+        <li><a id="wwrd" class="button cufon" href="https://www.sonypictures.com.au/registration/" title="Register for Updates" rel="external">Register for Updates</a></li>	
+	</ul>	
+<div id="inner-footer">
+	<ul id="logos">	
+		<li class="listfirst"><img src="images/logo-mgm.jpg" alt="Metro Goldwyn Mayer" /></li>
+		<li><img src="images/logo-columbiapictures.jpg" alt="Columbia Pictures" /></li>
+		<li><img src="images/logo-imax.jpg" alt="IMAX" /></li>
+		<li><a href="http://www.sonypictures.com.au/movies/ratings.html" rel="external"><img class="check" src="images/logo-checktheclassification.jpg" alt="Check the Classification" /></a></li>
+	</ul>
+	<p id="copyright">
+		Skyfall &copy; 2011 Danjaq, LLC, United Artists Corporation, Columbia Pictures Industries, Inc. 007 Gun Logo and related James Bond Trademarks &copy; 
+		1962-2011 Danjaq, LLC and United Artists Corporation.Skyfall, 007 and related James Bond Trademarks are trademarks of Danjaq, LLC. All Rights Reserved.<br />
+		IMAX&reg; is a registered trademark of IMAX Corporation.
+	</p>
+</div>		
+</div>
+
+<div id="fb-root"></div>
+<script type="text/javascript">
+	FB.init({
+		appId  : '295423270476181',
+		status : true, // check login status
+		cookie : true, // enable cookies to allow the server to access the session
+		xfbml  : true  // parse XFBML
+	});
+   
+	var likeUrl = 'https://www.facebook.com/JamesBond007';
+	
+	FB.Event.subscribe('edge.create', function(responses) {
+		sCode.trackOutboundClick(likeUrl , 'splash_facebooklike_button');
+	});
+	FB.Event.subscribe('edge.remove', function(responses) {
+		sCode.trackOutboundClick(likeUrl , 'splash_facebookunlike_button');
+	});
+</script>
+
+</body>
+</html>
